@@ -17,8 +17,8 @@ public class CameraMovement : MonoBehaviour
     private void MoveControls()
     {
         Vector3 dir = new Vector3((Input.GetAxis("Horizontal") * speed) + (Input.mouseScrollDelta.x * scrollSpeed), 0f, (Input.GetAxis("Vertical") * speed) + (Input.mouseScrollDelta.y * scrollSpeed));
-        if (Input.GetKey(KeyCode.Q) || Input.GetKey(KeyCode.LeftShift)) dir.y = -speed;
-        if (Input.GetKey(KeyCode.E) || Input.GetKey(KeyCode.LeftControl)) dir.y = speed;
+        if (Input.GetKey(KeyCode.Q) || Input.GetKey(KeyCode.LeftControl)) dir.y = -speed;
+        if (Input.GetKey(KeyCode.E) || Input.GetKey(KeyCode.LeftShift)) dir.y = speed;
 
         if (dir != Vector3.zero)
             transform.Translate(dir * Time.deltaTime);
