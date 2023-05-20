@@ -10,21 +10,21 @@ This repo contains an "Assets" file. You should be able to replace your Assets f
 
 The scene contains the following:
 - Main camera with a light object
-- RotatePoint which is the object that the camera will rotate around when right-clicking
-- Global Volume which is some URP stuff idrk
+- RotatePoint, which is the object that the camera will rotate around when right-clicking
+- Global Volume, which is some URP stuff idrk
 - A sample cube object. You can delete this without problem, it's just there so that the scene isn't completely empty. 
 
-The Main Camera contains the CameraMovement class. There you can set for example the sensitivies or how far away the target will be from the camera. 
+The Main Camera contains the CameraMovement class. There you can set, for example, the sensitivies or how far away the target will be from the camera. 
 
 ## Features
 
 ### Movement
 
-You can move the camera using WASD and QA, or the arrow keys and shift and control. You can also use the mouse wheel to move the camera in- and outwards, or left and right if you're able to scroll vertically. 
+You can move the camera using WASD and QA, or the arrow keys and shift and control. You can also use the mouse wheel to move the camera forwards and backwards, or left and right if you're able to scroll vertically. 
 
 ### Rotation
 
-If you press left, right or middle click the cursor will be locked. If you let go, the curser will return to the original position in Windows and into the middle of the window in other operating systems. 
+If you press left, right or middle click the cursor will be locked. If you let go, the cursor will return to the original position in Windows and into the middle of the window in other operating systems. 
 
 There are three different types of rotations:
 1. Rotation (left click): This rotates the camera like in a first-person-shooter.
