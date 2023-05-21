@@ -146,7 +146,7 @@ public class CameraMovement : MonoBehaviour
             return;
         }
 
-        float scrollDelta = Input.mouseScrollDelta.y * distanceFromTargetScrollSensitivity;
+        float scrollDelta = Input.mouseScrollDelta.y * distanceFromTargetScrollSensitivity / precision;
 
         if (scrollDelta > 0)
             distanceFromTarget *= scrollDelta + 1;
