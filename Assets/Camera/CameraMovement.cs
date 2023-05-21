@@ -67,7 +67,7 @@ public class CameraMovement : MonoBehaviour
         bool isRotating = Input.GetMouseButton(0);
         bool isRotatingAround = Input.GetMouseButton(1);
         bool isPanning = Input.GetMouseButton(2);
-        int boolCount = Convert.ToByte(isRotating) + Convert.ToByte(isRotatingAround) + Convert.ToByte(isPanning);
+        int boolCount = (isRotating?1:0) + (isRotatingAround?1:0) + (isPanning?1:0);
 
         // Only one of the three can be true at a time
         if (boolCount == 1) // lock the cursor
@@ -138,7 +138,7 @@ public class CameraMovement : MonoBehaviour
             return;
         }
 
-        float scrollDelta = -Input.mouseScrollDelta.y * distanceFromTargetScrollSensitivity;
+        float scrollDelta = Input.mouseScrollDelta.y * distanceFromTargetScrollSensitivity;
 
         if (scrollDelta > 0)
             distanceFromTarget *= scrollDelta + 1;
