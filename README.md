@@ -9,10 +9,10 @@ This repo contains an "Assets" file. You should be able to replace your Assets f
 ### The scene
 
 The scene contains the following:
-- Main camera with a light object
+- Main camera with a light object. This contains the CameraMovement script where you can edit the variables
 - RotatePoint, which is the object that the camera will rotate around when right-clicking
-- Global Volume, which is some URP stuff idrk
-- A sample cube object. You can delete this without problem, it's just there so that the scene isn't completely empty. 
+- Global Volume, which is some URP stuff I guess
+- A sample cube object. You can delete this without problem, it's just there so that the scene isn't completely empty
 
 The Main Camera contains the CameraMovement class. There you can set, for example, the sensitivies or how far away the target will be from the camera. 
 
