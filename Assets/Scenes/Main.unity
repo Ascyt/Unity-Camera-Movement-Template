@@ -353,6 +353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1fb90cd8562f944aa54a5ffe2c66a0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  precisionChange: 10
   speed: 10
   scrollSpeed: 1000
   rotationSensitivity: 2000
