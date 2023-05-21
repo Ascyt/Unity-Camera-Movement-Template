@@ -18,6 +18,8 @@ The Main Camera contains the CameraMovement class. There you can set, for exampl
 
 ## Features
 
+If you hold Alt while doing any of the following movements, they will be more precise.
+
 ### Movement
 
 You can move the camera using WASD and QA, or the arrow keys and shift and control. You can also use the mouse wheel to move the camera forwards and backwards, or left and right if you're able to scroll vertically. 
@@ -28,7 +30,7 @@ If you press left, right or middle click the cursor will be locked. If you let g
 
 There are three different types of rotations:
 1. Rotation (left click): This rotates the camera like in a first-person-shooter.
-2. Rotation around target (right click). This will rotate the camera around the target object that's shown when you do said movement.
+2. Rotation around target (right click). This will rotate the camera around the target object that's shown when you do said movement. Scroll while doing this to move the target in/out, left click to revert it to default.
 3. Panning (middle click): Pans the camera like it's a 2D scene.
    
 ![image](image.png)
